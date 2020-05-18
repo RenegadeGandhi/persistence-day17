@@ -21,8 +21,11 @@ app.get("/list", (req, res, next) => {
     });
 });
 
-app.delete("/delete", (req, res, next) => {
+app.get("/delete", (req, res, next) => {
     //delete contents of myWords.txt
+    fs.truncate('../persistence-day17/myWords.txt', 0, function() { 
+        res.status(200).send("Content Deleted"); 
+    });
 });
 
 app.use((req, res, next) => {
