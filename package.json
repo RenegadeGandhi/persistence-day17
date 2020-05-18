@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RenegadeGandhi/persistence-day17.git"
@@ -19,7 +23,11 @@
   "homepage": "https://github.com/RenegadeGandhi/persistence-day17#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "heroku": "^7.41.1",
     "mongoose": "^5.9.14",
     "nodemon": "^2.0.4"
+  },
+  "engines": {
+    "node": "12.16.1"
   }
 }
